@@ -9,7 +9,7 @@ import { RestaurantService } from '../service/restaurant.service';
   styleUrl: './restaurant-listing.component.css'
 })
 export class RestaurantListingComponent {
-  public restaurantList!: Restaurant[];
+  public restaurantList: Restaurant[] = [];
 
   ngOnInit() {
     this.getAllRestaurants();
