@@ -1,20 +1,30 @@
+#server:
+#  port: 9094
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#Spring:
+#  application:
+#    name: ORDERSERVICE
+#
+#  data:
+#    mongodb:
+#      url: mongodb://localhost:27017/orderdb
+#      host: localhost
+#      port: 27017
+#      database: orderdb
+#      repositories:
+#        enabled: true
+
 server:
   port: 9094
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
-Spring:
+spring:
+  profiles:
+    active: dev
   application:
-    name: ORDERSERVICE
+    name: ORDER-SERVICE
 
-  data:
-    mongodb:
-      url: mongodb://localhost:27017/orderdb
-      host: localhost
-      port: 27017
-      database: orderdb
-      repositories:
-        enabled: true
